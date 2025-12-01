@@ -12,17 +12,22 @@
   <div class="container" style="text-align: center;">
     <h1>Abstract Rendering: Certified Rendering Under 3D
         Semantic Uncertainty</h1>
-    <h3>Chenxi Ji<sup>*</sup>, Yangge Li<sup>*</sup>, Xiangru Zhong<sup>*</sup>, Huan Zhang, Sayan Mitra</h3>
-    <h4>University of Illinois, Urbana-Champaign</h4>
+    <p class="spotlight">NeurIPS 2025 spotlight</p>
+    <h3 class="author">Chenxi Ji<sup>*</sup>, Yangge Li<sup>*</sup>, Xiangru Zhong<sup>*</sup>, Huan Zhang, Sayan Mitra</h3>
+    <h4 class="institute">University of Illinois, Urbana-Champaign</h4>
+
 
     <p>
       <a href="assets/pdf/AbstractRendering_Neurips2025.pdf">[Paper]</a> |
       <a href="https://github.com/IllinoisReliableAutonomyGroup/Abstract-Rendering.git">[Code]</a>
     </p>
+    <br>
 
     <img src="assets/images/pipeline.png" class="teaser" alt="Teaser Image" style="width: 100%;">
+    <br><br>
 
     <h2>Abstract</h2>
+    
     <p style="text-align: left;">
         Rendering produces 2D images from 3D scene representations, yet how continuous variations in camera pose and scenes influence these images—and, consequently, downstream visual models—remains underexplored. We introduce <strong>Abstract Rendering</strong>, a framework that computes provable bounds on all images rendered under continuously varying camera poses and scenes. The resulting abstract image, expressed as a set of constraints over the image matrix, enables rigorous uncertainty propagation through downstream neural networks and thereby supports certification of model behavior under realistic 3D semantic perturbations, far beyond traditional pixel-level noise models.
     </p><br>
@@ -33,46 +38,56 @@
 
     <p style="text-align: left;">
         Our computed abstract images achieve up to <strong>3% over-approximation error</strong> compared to sampling results (baseline). Through experiments on classification (ResNet), object detection (YOLO), and pose estimation (GATENet) tasks, we demonstrate that abstract rendering enables formal certification of downstream models under realistic 3D variations—an essential step toward safety-critical vision systems.
-    </p><br>
+    </p><br><br>
 
     <h2>SlideVideo</h2>
+    <br>
     <div class="slidevideo-container">
         <video class="wide-video" controls>
             <source src="assets/videos/output_small.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
+    <br><br>
 
     <h2>Abstract Images</h2>
+  
     <p style="text-align: left;">Lower bound and upper bound images are supposed to contain all images that can be rendered from given range of camera (scene) movement, like reference images.</p>
 
     <video class="wide-video" controls>
         <source src="assets/videos/AR_vis_airplane_grey.mp4" type="video/mp4">
     </video><br>
     <img src="assets/images/abs_result.png" class="teaser" alt="Teaser Image" style="width: 100%;"><br>
-    
+    <br>
+
     <h2>Downstream NN Verification</h2>
+    
     <p style="text-align: left;">Verified range of camera movement for which the downstream NN (ResNet classifer or GateNet pose estimator) is certified to work (color in green), and identify the ranges where it may fail (color in red).</p>
 
     <img src="assets/images/classification result.png" class="teaser" alt="Teaser Image" style="width: 100%;">
     <img src="assets/images/pose estimator result.png" class="teaser" alt="Teaser Image" style="width: 100%;">
-    <br>
+    <br><br>
 
     <h2>BibTeX</h2>
+    
     <pre style="text-align: left;">
 @inproceedings{jiabstract,
     title={Abstract Rendering: Certified Rendering Under 3D Semantic Uncertainty},
     author={Ji, Chenxi and Li, Yangge and Zhong, Xiangru and Zhang, Huan and Mitra, Sayan},
     booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems}
 }
-    </pre><br>
+    </pre>
+    <br><br>
 
     <h2>Acknowledgments and Funding</h2>
+    
     <p style="text-align: left;">
         Chenxi Ji, Yangge Li, and Sayan Mitra are supported by a research grant from The Boeing Company and NSF (FMITF-2525287). Huan Zhang and Xiangru Zhong are supported in part by the AI2050 program at Schmidt Sciences (AI2050 Early Career Fellowship) and NSF (IIS SLES-2331967, CCF FMITF-2525287).
-        </p>
+    </p>
+    <br><br>
 
     <h2>Reference</h2>
+    
     <p style="text-align: left;">
         [1] Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, and George Drettakis. 3d gaussian splatting for real-time radiance field rendering. <i>ACM Trans. Graph.</i>, 42(4):139–1, 2023.
     </p><br>

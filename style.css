@@ -108,3 +108,21 @@
     color: #777;
     font-size: 0.9rem;
   }
+
+  .author {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: normal; /* Ensure it's not bold */
+    margin: 10px 0;
+  }
+
+  .institute {
+    font-size: 1.2rem; /* Slightly smaller than author */
+    font-weight: normal; /* Ensure it's not bold */
+    margin: 5px 0;
+  }
+
+  .spotlight {
+    font-size: 1.8rem; /* Increase font size */
+    font-weight: normal; /* Ensure it's not bold */
+    margin: 10px 0;
+  }
