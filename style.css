@@ -47,8 +47,8 @@
   
   /* Main content area */
   .container {
-    max-width: 800px;
-    margin: auto;
+    width: 100%; /* Make the container span the full width */
+    margin: 0; /* Remove auto centering */
     padding: 0 20px 60px;
     background-color: #fff;
   }
