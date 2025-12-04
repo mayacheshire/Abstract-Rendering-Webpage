@@ -13,13 +13,13 @@
     <h1>Abstract Rendering: Certified Rendering Under 3D
         Semantic Uncertainty</h1>
     <p class="spotlight">NeurIPS 2025 spotlight</p>
-    <h3 class="author">Chenxi Ji<sup>*</sup>, Yangge Li<sup>*</sup>, Xiangru Zhong<sup>*</sup>, Huan Zhang, <a href="https://mitras.ece.illinois.edu/">Sayan Mitra</a></h3>
+    <h3 class="author">Chenxi Ji<sup>*</sup>, Yangge Li<sup>*</sup>, Xiangru Zhong<sup>*</sup>, <a href="https://www.huan-zhang.com/">Huan Zhang</a>, <a href="https://mitras.ece.illinois.edu/">Sayan Mitra</a></h3>
     <h4 class="institute">University of Illinois, Urbana-Champaign</h4>
 
 
     <p>
       <a href="assets/pdf/AbstractRendering_Neurips2025.pdf" class="button">Paper</a>
-      <a href="https://github.com/IllinoisReliableAutonomyGroup/Abstract-Rendering.git" class="button">Code</a>
+      <a href="https://github.com/IllinoisReliableAutonomyGroup/Abstract-Rendering.git" class="button">Code (Coming Soon)</a>
     </p>
     <br>
 
@@ -30,11 +30,11 @@
     
     <p style="text-align: justify">
         Rendering generates a two-dimensional image from the description of a three-dimensional scene and the camera parameters. To analyze how <em></em>visual models</em>, such as classifiers and pose estimators, and controllers behave with respect to changes in the scene or in the camera parameters, we need to propagate those changes through the rendering process. 
-        This is the problems of  <strong>Abstract Rendering</strong> introduces and tackled in this paper. Abstract rendering computes  <em>provable pixel color bounds</em> on all images that can be produced under variations in the scene and in the camera positions. The resulting sets of images are called <strong>abstract images</strong> which can then be propagated through neural networks verification tools such as <a href="https://github.com/Verified-Intelligence/alpha-beta-CROWN">CROWN</a> to certify visual models under realistic semantic perturbations. For example, we can certify that a ResNet classifier will continue to detect and classify an airplane or a car correctly as the camera moves within a certain range of positions. 
+        This is the problems of  <strong>Abstract Rendering</strong> introduced and tackled in this paper. Abstract rendering computes  <em>provable pixel color bounds</em> on all images that can be produced under variations in the scene and in the camera positions. The resulting sets of images are called <strong>abstract images</strong> which can then be propagated through neural networks verification tools such as <a href="https://github.com/Verified-Intelligence/alpha-beta-CROWN">CROWN</a> to certify visual models under realistic semantic perturbations. For example, we can certify that a ResNet classifier will continue to detect and classify an airplane or a car correctly as the camera moves within a certain range of positions. 
     </p><br>
 
     <p style="text-align: justify">
-        In this peper, we present an abstract rendering framework for scenes represeted by <em><a href="https://en.wikipedia.org/wiki/Gaussian_splatting">Gaussian splats</a> (3DGS)</em> and <em><a href="https://en.wikipedia.org/wiki/Neural_radiance_field">NeRFs</a></em>. Our approach is based on computing piecewise-linear relational abstractions for each of the operations appearing in the standard rendering algorithms for 3DGS and NeRFs. By composing these relational abstractions, we get the abstract rendering algorithms that can compute pixel color bounds or abstract images. Experiments on classification (ResNet), object detection (YOLO), and pose estimation (GateNet) show that our abstract images provide guaranteed over-approximations with no more than 3% conservativeness error, enabling practical certification for safety-critical vision systems.
+        In this peper, we present an abstract rendering framework for scenes represeted by <em><a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">Gaussian splats</a> (3DGS)</em> and <em><a href="https://www.matthewtancik.com/nerf">NeRFs</a></em>. Our approach is based on computing piecewise-linear relational abstractions for each of the operations appearing in the standard rendering algorithms for 3DGS and NeRFs. By composing these relational abstractions, we get the abstract rendering algorithms that can compute pixel color bounds or abstract images. Experiments on classification (ResNet), object detection (YOLO), and pose estimation (GateNet) show that our abstract images provide guaranteed over-approximations with no more than 3% conservativeness error, enabling practical certification for safety-critical vision systems.
     </p><br><br>
 
    
